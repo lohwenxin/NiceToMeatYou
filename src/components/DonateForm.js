@@ -9,19 +9,28 @@ import {
   Button,
   IconButton,
 } from "@mui/material";
-import AddIcon from "@mui/icons-material/Add";
-import RemoveIcon from "@mui/icons-material/Remove";
-import { useForm, Form } from "./UseForm";
 import TextInput from "./input/TextInput";
 import RadioButtonField from "./input/RadioButtonField";
 import DropDownList from "./input/DropDownList";
 import { Link } from "react-router-dom";
 import { send } from 'emailjs-com';
 
-const genderItems = [
-  { id: "male", title: "Male" },
-  { id: "female", title: "Female" },
-  { id: "other", title: "Other" },
+const foodTypes = [
+  { id: "male", title: "Staples" },
+  { id: "produce", title: "Fresh Produce" },
+  { id: "meat", title: "Meat" },
+  { id: "dairy", title: "Dairy" },
+  { id: "cannedGoods", title: "Canned Goods" },
+  { id: "snacks", title: "Snacks" },
+  { id: "condiments", title: "Condiments" },
+  { id: "beverages", title: "Beverages" },
+  { id: "other", title: "Others" },
+];
+
+const foodStateArr = [
+  { id: "6", title: "> 6 Months" },
+  { id: "3", title: "> 3 Months" },
+  { id: "1", title: "Less Than 1 Month" }
 ];
 
 const regionItems = [
@@ -35,18 +44,20 @@ const initialFormValues = {
   fullName: "",
   mobile: "",
   email: "",
-  gender: "",
+  foodType: "",
+  description:"",
+  foodState: "",
   region: ""
 };
 
 const useStyles = makeStyles((theme) => ({
   button: {
-    margin: theme.spacing(1),
+    margin: theme.spacing(1.5),
   },
   root: {
     "& .MuiFormControl-root": {
       width: "80%",
-      margin: theme.spacing(1),
+      margin: theme.spacing(1.5),
     },
   }
 }));
@@ -79,11 +90,27 @@ export default function DonateForm() {
     }));
   };
 
-  const handleGenderInputChange = (event) => {
+  const handleFoodTypeInputChange = (event) => {
     event.persist();
     setValues((values) => ({
       ...values,
-      gender: event.target.value,
+      foodType: event.target.value,
+    }));
+  };
+
+  const handleDescriptionInputChange = (event) => {
+    event.persist();
+    setValues((values) => ({
+      ...values,
+      description: event.target.value,
+    }));
+  };
+
+  const handleFoodStateInputChange = (event) => {
+    event.persist();
+    setValues((values) => ({
+      ...values,
+      foodState: event.target.value,
     }));
   };
 
@@ -143,17 +170,39 @@ export default function DonateForm() {
               onChange={handleEmailInputChange}
             />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12}>
             <RadioButtonField
-              name="gender"
-              label="Gender"
-              value={values?.gender}
-              onChange={handleGenderInputChange}
-              items={genderItems}
+              name="foodType"
+              label="Food Type"
+              value={values?.foodType}
+              onChange={handleFoodTypeInputChange}
+              items={foodTypes}
             />
-            <DropDownList
+          </Grid>
+
+          <Grid item xs={3}>
+            <TextInput
+              id="description"
+              label="Description"
+              name="description"
+              value={values?.description}
+              onChange={handleDescriptionInputChange}
+            />
+          </Grid>
+          <Grid item xs={3}>
+          <DropDownList
+              name="foodStateArr"
+              label="Shelf Life"
+              value={values?.foodState}
+              onChange={handleFoodStateInputChange}
+              options={foodStateArr}
+            />
+          </Grid>
+
+          <Grid item xs={6}>
+          <DropDownList
               name="region"
-              label="Region"
+              label="Region (For Nearest Collection Point)"
               value={values?.region}
               onChange={handleRegionInputChange}
               options={regionItems}

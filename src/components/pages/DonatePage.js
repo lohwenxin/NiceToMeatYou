@@ -17,7 +17,7 @@ export default function DonatePage() {
     <>
       <h1 className="donate-page">DONATE FOOD</h1>
       <Paper className={classes.pageContent}>
-        <h3>Donate your food to make a difference today!</h3>
+        <h2>Donate your food to make a difference today!</h2>
         <DonateForm />
       </Paper>
     </>
