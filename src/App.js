@@ -5,7 +5,6 @@ import Home from './components/pages/Home'
 import Search from './components/pages/Search'
 import Services from './components/pages/Services'
 import Products from './components/pages/Products'
-import SignUp from './components/pages/SignUp'
 import DonatePage from './components/pages/DonatePage'
 import DonatePage2 from './components/pages/DonatePage2.js'
 import ThankYou from './components/pages/ThankYou.js'
@@ -23,7 +22,6 @@ function App() {
         <Route path = '/' exact component = { Home }/>
         <Route path = '/services' component = {Services} />
         <Route path = '/products' component = {Products} />
-        <Route path = '/sign-up' component = {SignUp} />
         <Route path = '/camera' component = {CameraEntry}/>
         <Route path = '/menus' component = {MenusEntry}/>
         <Route path = '/search' component = {Search} />
