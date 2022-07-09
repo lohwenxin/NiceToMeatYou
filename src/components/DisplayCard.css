@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top {
+    flex-direction: row;
+    display: flex;
+    
+}
+
+.imageContainer {
+    width: 50%;
+    padding: 50px;
+}
+
+img {
+    height: 500px;
+}
+
+.textContainer {
+    width: 50%;
+
+}
+
+.name {
+    margin-top: 50px;
+}
+
+.category {
+    width: 140px;
+    background: lightblue;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.ingredients {
+    border: 1px black solid;
+    width: 200px;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ingredient {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-bottom: 5px;
+    
+}
+
+.bottom {
+    /* margin-top: 30px; */
+    margin-bottom: 50px;
+    
+    font-weight: 100;
+    font-size: 25px;
+    
+
+}
+
+.instructions {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+    .top {
+        flex-direction: column;
+        display: flex;
+    }
+    .imageContainer {
+        width: 100%;
+        text-align: center;
+    }
+    .textContainer {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .name {
+        margin-top: 0px;
+    }
+    .bottom {
+        width: 80%;
+        
+        
+    }
+}
