@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/pages/Home'
 import Search from './components/pages/Search'
+import Recipe from './components/pages/Recipe'
 import Services from './components/pages/Services'
 import Products from './components/pages/Products'
 import DonatePage from './components/pages/DonatePage'
@@ -25,6 +26,7 @@ function App() {
         <Route path = '/camera' component = {CameraEntry}/>
         <Route path = '/menus' component = {MenusEntry}/>
         <Route path = '/search' component = {Search} />
+        <Route path = '/recipe' component = {Recipe} />
         <Route path = '/display-card' component = {DisplayCard} />
         <Route path = '/donate-page' component = {DonatePage}/>
         <Route path = '/page-2' component = {DonatePage2}/>
