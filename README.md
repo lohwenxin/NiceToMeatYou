@@ -41,7 +41,11 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GET STARTED -->
 ## Get started
 - Clone the repo 
-- Run npm i & npm start
+- Run the following commands: 
+```
+npm i 
+npm start
+```
 
 
 
