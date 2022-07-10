@@ -2,10 +2,10 @@
 <br />
 <div align="center">
   
-  <h3 align="center">Nice to Meat You</h3>
+  <h3 align="center">Nice to Meat You!</h3>
   <div align="center">
   <a href="https://github.com/lohwenxin/NiceToMeatYou">
-    <img src="src/images/page1.png" alt="web front page" width="80%" height="80%">
+    <img src="src/images/homeui.png" alt="web front page" width="80%" height="80%">
   </a>
   </div>
   
