@@ -16,7 +16,7 @@ function Cards2(props) {
                       <CardItem2
                         src={post["strMealThumb"]}
                         text={post["strMeal"]}
-                        path="/display-card"
+                        
                         post={post}
                       />
                     </div>
