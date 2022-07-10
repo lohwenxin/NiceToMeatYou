@@ -20,13 +20,16 @@
 ## About The Project
 
 
-Following the theme of Lifehack 2022 about environment, NiceToMeatYou is a **web app for people to prevent food waste and build a supportive community.** Being a recipe searching and food donation platform, it encourages people to minimise wastage and help the needy. 
+Following the theme of Lifehack 2022 on Environment, NiceToMeatYou is a **web app for people to prevent food waste and build a supportive community.** Being a recipe searching and food donation platform, it encourages people to minimise wastage and help the needy. 
 
-Main features of the app includes:
-* Providing recipes for the ingredients left in fridge to minimise wastage
-* Allowing people to contribute their excess food to the community by filling in a form
+**Main features of the app includes:**
 
-We hope you find our website useful in your to prevent food waste and help others!
+Our web application is our team's solution to tackling food waste. It has 2 main features:
+* The main feature, **Search By Ingredient**,  allows users to search for recipes using ingredients left in their fridge, to minimise wastage of near-expired food. 
+
+* The second feature, **Donate**, allows users to submit requests to donate excess food or ingredients at home. Users fill in a form with their personal details, as well as details about their donation. After the form is submitted, an email will be sent to one of our team members notifying us of a new donation request.
+
+We hope you find our website useful in your preventing of food waste and in helping others!
 
 
 ### Built With
@@ -41,11 +44,10 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GET STARTED -->
 ## Get started
 - Clone the repo 
+- Go into the folder with the repo
 - Run the following commands: 
 ```
-npm i 
+npm install **(if this throws an error, run "npm install --force")** 
 npm start
 ```
-
-
 
