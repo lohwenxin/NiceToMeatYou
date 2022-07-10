@@ -20,7 +20,7 @@
 ## About The Project
 
 
-Following the theme of Lifehack 2022 about environment, Lifehack is a **web app for people to prevent food waste and build a supportive community.** Being a recipe searching and food donation platform, it encourages people to minimise wastage and help the needy. 
+Following the theme of Lifehack 2022 about environment, NiceToMeatYou is a **web app for people to prevent food waste and build a supportive community.** Being a recipe searching and food donation platform, it encourages people to minimise wastage and help the needy. 
 
 Main features of the app includes:
 * Providing recipes for the ingredients left in fridge to minimise wastage
