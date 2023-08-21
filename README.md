@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  
+  <h3 align="center">Nice to Meat You!</h3>
+  <div align="center">
+  <a href="https://github.com/lohwenxin/NiceToMeatYou">
+    <img src="src/images/homeui.png" alt="web front page" width="80%" height="80%">
+  </a>
+  </div>
+  
+  <p align="center">
+    Let's reduce food waste and end food insecurity in Singapore together!
+    <br />
+  </p>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-In the project directory, you can run:
 
-### `npm start`
+Following the theme of Lifehack 2022 on Environment, NiceToMeatYou is a **web app for people to prevent food waste and build a supportive community.** Being a recipe searching and food donation platform, it encourages people to minimise wastage and help the needy. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Main features of the app includes:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Our web application is our team's solution to tackling food waste. It has 2 main features:
+* The main feature, **Search By Ingredient**,  allows users to search for recipes using ingredients left in their fridge, to minimise wastage of near-expired food. 
 
-### `npm test`
+* The second feature, **Donate**, allows users to submit requests to donate excess food or ingredients at home. Users fill in a form with their personal details, as well as details about their donation. After the form is submitted, an email will be sent to one of our team members notifying us of a new donation request.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We hope you find our website useful in your preventing of food waste and in helping others!
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Built With
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* [React.js](https://reactjs.org/)
+* [CSS](https://www.w3schools.com/css/)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- GET STARTED -->
+## Get started
+- Clone the repo 
+- Go into the folder with the repo
+- Run the following commands: 
+```
+npm install **(if this throws an error, run "npm install --force")** 
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

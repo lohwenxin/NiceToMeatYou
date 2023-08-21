@@ -1,12 +1,12 @@
 import '../../App.css';
-import Cards from '../Cards';
+import Cards2 from '../Cards2';
 import Footer from '../Footer';
 import { Option } from 'nasi-lemak';
 import React, {useEffect, useState} from 'react'
 import '../Spinner.css'
 
 import SearchButton from '../SearchButton';
-import '../Spinner.css';
+
 function Search () {
     const [posts, setPosts] = useState();
     const [loading, setLoading] = useState(true);
@@ -14,7 +14,7 @@ function Search () {
     const [name, setName] = useState("");
     const [empty, setEmpty] = useState(false);
 
-    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`;
+    const url = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${name}`;
     
     const fetchData = async () => {
         const data = await fetch(url, {
@@ -63,8 +63,9 @@ function Search () {
           :
             (
             <div className = "search">
+              <h1 className = "text-top">Look for recipes by ingredient you have!</h1>
                 <SearchButton {...{keyword: keyword, setKeyword: setKeyword, name: name, setName: setName}}/>
-                <Cards {...{ posts: posts, name: name, keyword: keyword }} />
+                <Cards2 {...{ posts: posts, name: name, keyword: keyword }} />
                 <Footer/>
             </div>
             )
